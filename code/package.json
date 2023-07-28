@@ -1,0 +1,16 @@
+{
+  "name": "code",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run dev",
+    "dev": "bun run --watch index.ts"
+  },
+  "dependencies": {
+    "@types/color": "^3.0.3",
+    "bun-types": "^0.7.0",
+    "color": "^4.2.3",
+    "json5": "^2.2.3",
+    "typescript": "^5.1.6"
+  }
+}
