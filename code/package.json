@@ -6,7 +6,7 @@
     "start": "bun run dev",
     "dev": "bun run --watch index.ts",
     "build": "bun run index.ts",
-    "upgrade": "npm-check-updates --upgrade && bun update"
+    "upgrade": "npm-check-updates --upgrade && bun install"
   },
   "dependencies": {
     "@types/color": "^3.0.6",
