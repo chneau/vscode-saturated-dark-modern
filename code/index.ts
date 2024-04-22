@@ -1,6 +1,5 @@
-import { format } from "prettier";
 import { downloadTheme, fuseThemes, saturateTheme } from "./functions";
-import { Theme } from "./models";
+import type { Theme } from "./models";
 
 // variables
 const themesToDownload = ["dark_vs", "dark_plus", "dark_modern"];
@@ -8,7 +7,8 @@ const tempFile = "default-dark-theme-vscode.json";
 const finalFile = "../themes/Saturated Dark Modern-color-theme.json";
 
 const start = new Date();
-const msSinceStartInMs = () => (new Date().getTime() - start.getTime()).toString().padStart(3, " ");
+const msSinceStartInMs = () =>
+	(new Date().getTime() - start.getTime()).toString().padStart(3, " ");
 console.log(`${msSinceStartInMs()}ms: Starting...`);
 
 // download the themes
@@ -20,7 +20,7 @@ const theme: Theme = fuseThemes(...darkThemes);
 console.log(`${msSinceStartInMs()}ms: Fused themes...`);
 
 // write the theme to disk
-await Bun.write(tempFile, await format(JSON.stringify(theme), { parser: "json" }));
+await Bun.write(tempFile, JSON.stringify(theme));
 console.log(`${msSinceStartInMs()}ms: Wrote theme...`);
 
 // create a copy with saturated colors
@@ -28,7 +28,7 @@ const saturatedTheme = saturateTheme(theme);
 console.log(`${msSinceStartInMs()}ms: Saturated colors...`);
 
 // prettify the theme
-const prettyFormat = await format(JSON.stringify(saturatedTheme), { parser: "json" });
+const prettyFormat = JSON.stringify(saturatedTheme);
 console.log(`${msSinceStartInMs()}ms: Formatted theme...`);
 
 // write the theme to disk

@@ -1,41 +1,38 @@
 {
-  "name": "saturated-dark-modern",
-  "displayName": "Saturated Dark Modern",
-  "description": "Saturated version of the default Dark Modern theme",
-  "version": "1.0.3",
-  "publisher": "chneau",
-  "license": "MIT",
-  "scripts": {
-    "start": "npm run --cwd code start",
-    "build": "npm run --cwd code build",
-    "upgrade": "npm run --cwd code upgrade",
-    "publish": "npm run build && vsce package && vsce publish"
-  },
-  "galleryBanner": {
-    "color": "#1E1E1E",
-    "theme": "dark"
-  },
-  "keywords": [
-    "dark"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chneau/vscode-saturated-dark-modern"
-  },
-  "icon": "images/icon.png",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Saturated Dark Modern",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Saturated Dark Modern-color-theme.json"
-      }
-    ]
-  }
+	"name": "saturated-dark-modern",
+	"displayName": "Saturated Dark Modern",
+	"description": "Saturated version of the default Dark Modern theme",
+	"version": "1.0.4",
+	"publisher": "chneau",
+	"license": "MIT",
+	"scripts": {
+		"start": "bun run --cwd code start",
+		"build": "bun run --cwd code build",
+		"upgrade": "bun run --cwd code upgrade",
+		"publish": "bun run build && vsce package && vsce publish",
+		"check": "biome check --apply-unsafe ."
+	},
+	"galleryBanner": {
+		"color": "#1E1E1E",
+		"theme": "dark"
+	},
+	"keywords": ["dark"],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chneau/vscode-saturated-dark-modern"
+	},
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"categories": ["Themes"],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Saturated Dark Modern",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Saturated Dark Modern-color-theme.json"
+			}
+		]
+	}
 }
