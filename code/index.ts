@@ -21,6 +21,7 @@ console.log(`${msSinceStartInMs()}ms: Fused themes...`);
 
 // write the theme to disk
 await Bun.write(tempFile, JSON.stringify(theme));
+await Bun.$`biome format --write ${tempFile}`.quiet().nothrow();
 console.log(`${msSinceStartInMs()}ms: Wrote theme...`);
 
 // create a copy with saturated colors
