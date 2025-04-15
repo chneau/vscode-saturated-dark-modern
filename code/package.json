@@ -7,8 +7,8 @@
 		"dev": "bun run --watch index.ts",
 		"build": "bun run index.ts && bun run check",
 		"upgrade": "bun update --latest",
-		"check": "deno fmt --use-tabs --quiet; oxlint --fix-dangerously --quiet; biome check --write --unsafe .",
-		"lint": "tsc",
+		"check": "deno fmt --use-tabs --quiet; oxlint --fix-dangerously --quiet; timeout 3s biome check --write --unsafe .",
+		"lint": "tsc --noEmit",
 		"all": "bun run upgrade; bun run check; bun run lint"
 	},
 	"dependencies": {
