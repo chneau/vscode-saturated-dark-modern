@@ -2,7 +2,7 @@
 	"name": "saturated-dark-modern",
 	"displayName": "Saturated Dark Modern",
 	"description": "Saturated version of the default Dark Modern theme",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"publisher": "chneau",
 	"license": "MIT",
 	"scripts": {
@@ -16,7 +16,9 @@
 		"color": "#1E1E1E",
 		"theme": "dark"
 	},
-	"keywords": ["dark"],
+	"keywords": [
+		"dark"
+	],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/chneau/vscode-saturated-dark-modern"
@@ -25,7 +27,9 @@
 	"engines": {
 		"vscode": "^1.80.0"
 	},
-	"categories": ["Themes"],
+	"categories": [
+		"Themes"
+	],
 	"contributes": {
 		"themes": [
 			{
