@@ -2,7 +2,7 @@
 	"name": "saturated-dark-modern",
 	"displayName": "Saturated Dark Modern",
 	"description": "Saturated version of the default Dark Modern theme",
-	"version": "1.0.11",
+	"version": "1.0.12",
 	"publisher": "chneau",
 	"license": "MIT",
 	"scripts": {
@@ -38,5 +38,8 @@
 				"path": "./themes/Saturated Dark Modern-color-theme.json"
 			}
 		]
+	},
+	"devDependencies": {
+		"@vscode/vsce": "^3.7.0"
 	}
 }
