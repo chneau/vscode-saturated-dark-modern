@@ -29,9 +29,3 @@ yet energetic theme that improves contrast and makes syntax highlighting pop.
 2. Search for `Saturated Dark Modern`.
 3. Click **Install**.
 4. Select the theme from the **Themes** list.
-
-<div align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=chneau.saturated-dark-modern">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/chneau.saturated-dark-modern?style=for-the-badge&label=VS%20Marketplace&color=007acc" alt="Visual Studio Marketplace Version" />
-  </a>
-</div>
